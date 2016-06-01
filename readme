@@ -1,0 +1,13 @@
+/*git user docunt*/
+
+install: sudo apt-get install git
+
+config:  git config --global user.name "chinaduking"
+	 git config --global user.email "837185204@qq.com"
+
+clone:  git clone https://github.com/chinaduking
+
+push: git add filename/folder
+      git status -s
+      git commit
+      git push
