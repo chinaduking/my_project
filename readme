@@ -9,5 +9,5 @@ clone:  git clone https://github.com/chinaduking
 
 push: git add filename/folder
       git status -s
-      git commit
+      git commit -m 'xxxxxx'
       git push
