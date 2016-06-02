@@ -1,0 +1,13 @@
+install:  client:   sudo apt-get install openssh-client
+	  server:   sudo apt-get install openssh-server
+
+查看是否启动： ps -e|grep ssh
+
+如果没有则可以这样启动：sudo /etc/init.d/ssh start
+ssh-server配置文件位于/ etc/ssh/sshd_config，在这里可以定义SSH的服务端口，默认端口是22，你可以自己定义成其他端口号，如222。
+然后重启SSH服务：
+sudo /etc/init.d/ssh stop
+sudo /etc/init.d/ssh start
+然后使用以下方式登陆SSH：
+ssh tuns@192.168.0.100 tuns为192.168.0.100机器上的用户，需要输入密码。
+断开连接：exit
